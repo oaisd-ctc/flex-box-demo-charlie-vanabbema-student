@@ -7,63 +7,96 @@ body {
     max-height: 100%;
 }
 article {
-    min-height: 33vh;
     display: flex;
-    margin: 5em;
-    text-align: center;
+    /* min-height: 33vh; */
+    text-align: center; 
+    justify-content: center;
+    
 }
+.flex-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* padding: 2em; */
+    font-size: 3em;
+    /* margin: 1em; */
+    border: none;
+    /* justify-content: space-between; */
+    align-items: stretch;
+}
+.flex-container>div {
+    background-color: rgb(246, 255, 169);
+    width: 2em;
+    /* margin: 1em; */
+    padding: 1em;
+    font-size: 1em;
+    align-items: stretch;
+}
+
 div {
-    display:flex;
     border: solid 1px rgb(117, 190, 121);
-    margin: 1em;
-    
+    margin: .5em;
+    text-align: center;
+    /* flex: 1; */
 }
-#left {
-    
-    float: left;
-    
+div.flex{
+    min-width: 45%;
+    flex: 1;
+    align-items: center;
 }
-#right {
-   
-    float: right;
-}
+
+
 hr {
     margin: 100px 0px 25px 0px;
     border-color: rgb(117, 190, 121);
     border-width: 2px;
     border-style:ridge;
 }
-.flexbox {
-    padding: 2em;
-    font-size: 3em;
-    margin: 1em;
-    text-align: center;
-}
-
-.flex-item{
+/* .flex-item{
     background-color: rgb(246, 255, 169);
     max-width: 10%;
     margin: 1em;
     padding: 1em;
     font-size: 1em;
-}
-.flex-container{
-    display: flex;
-    /* padding: 2em; */
-    font-size: 3em;
-    margin: 1em;
-    border: none;
-}
-#flex-direction-column.flex-container{
+} */
+
+
+
+#flex-direction-column{
 flex-direction: column;
 }
-#flex-direction-column-reverse.flex-container{
+#flex-direction-column-reverse{
     flex-direction: column-reverse;
     }
-#flex-direction-row.flex-container{
+#flex-direction-row{
     flex-direction: row;
     }
-#flex-direction-row-reverse.flex-container{
+#flex-direction-row-reverse{
     flex-direction: row-reverse;
     }
+
+#flex-justify-center{
+    justify-content: center;
+}
+#flex-justify-start{
+    justify-content: flex-start;
+}
+#flex-justify-end{
+    justify-content:end;
+}
+#flex-justify-space-around{
+    justify-content: space-around;
+}
+#flex-justify-space-between{
+    justify-content: space-between;
+}
+#flex-wrap-wrap{
+    flex-wrap: wrap;
+}
+#flex-wrap-nowrap{
+    flex-wrap: nowrap;
+}
+#flex-wrap-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
 

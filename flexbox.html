@@ -9,51 +9,157 @@
     <link rel="stylesheet" type="text/css" href="styles/flexbox.css" />
     <title>Flex-box Lab</title>
 </head>
-<body>
-    <h1>Flex Container Properties</h1>
-    <h1>flex-Direction</h1>
-    <div><h3>flex-direction:row</h3>
-        <div class="flex-container" id="flex-direction-row">
-            <div class="flex-item">1</div>
-            <div class="flex-item">2</div>
-            <div class="flex-item">3</div>
+<b>
+    <section>
+            <h1>Flex Container Properties</h1>
+            <h1>flex-direction:</h1>
+            <div><h3>flex-direction:row</h3>
+                <div class="flex-container" id="flex-direction-row">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+            <div><h3>flex-direction:row-reverse</h3>
+                <div class="flex-container" id="flex-direction-row-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        <article>
+            <div class="flex"><h3>flex-direction:column</h3>
+                <div class="flex-container" id="flex-direction-column">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+            <div class="flex"><h3>flex-direction:column-reverse</h3>
+                <div class="flex-container" id="flex-direction-column-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </article>
+    </section>   
+<hr> 
+    <section>
+        <h1>justify-content:</h1>
+            <h1>blahblahblah</h1>
+            <div>
+                    <h3>justify-content:center</h3>
+                <div class="flex-container" id="flex-justify-center">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+
+            <div>
+                    <h3>justify-content:start</h3>
+                <div class="flex-container" id="flex-justify-start">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+
+            <div>
+                    <h3>justify-content:end</h3>
+                <div class="flex-container" id="flex-justify-end">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+
+            <div>
+                <h3>justify-content:space-around</h3>
+            <div class="flex-container" id="flex-justify-space-around">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
         </div>
-    </div>
-    <div><h3>flex-direction:row-reverse</h3>
-        <div class="flex-container" id="flex-direction-row-reverse">
-            <div class="flex-item">1</div>
-            <div class="flex-item">2</div>
-            <div class="flex-item">3</div>
+
+        <div>
+                <h3>justify-content:space-between</h3>
+            <div class="flex-container" id="flex-justify-space-between">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
         </div>
-    </div>
-<div>
-    <div id="left"><h3>flex-direction:column</h3>
-        <div class="flex-container" id="flex-direction-column">
-            <div class="flex-item">1</div>
-            <div class="flex-item">2</div>
-            <div class="flex-item">3</div>
+    </section>
+<hr> 
+    <section>
+        <h1>flex-wrap:</h1>
+        <h1>blahblahblah</h1>
+        <div>
+                <h3>flex-wrap:wrap</h3>
+            <div class="flex-container" id="flex-wrap-wrap">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+            </div>
         </div>
-    </div>
-    <div id="right"><h3>flex-direction:column-reverse</h3>
-        <div class="flex-container" id="flex-direction-column-reverse">
-            <div class="flex-item">1</div>
-            <div class="flex-item">2</div>
-            <div class="flex-item">3</div>
+
+        <div>
+                <h3>flex-wrap:nowrap</h3>
+            <div class="flex-container" id="flex-wrap-nowrap">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+            </div>
         </div>
-    </div>
-</div>
-    
-<!-- <hr>     -->
-    <!-- <h1>Flex Item Properties</h1>
-    <h1>blahblahblah</h1>
-        <div class="flex-container">
-            <div class="flex-item">1</div>
-            <div class="flex-item">2</div>
-            <div class="flex-item">3</div>
-            <div class="flex-item">4</div>
-            <div class="flex-item">5</div>
-            <div class="flex-item">6</div>
-        </div> -->
-        
+
+        <div>
+                <h3>flex-wrap:wrap-reverse</h3>
+            <div class="flex-container" id="flex-wrap-wrap-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+            </div>
+        </div>
+    </section>
+<hr>  
+    <section>
+        <h1>Flex Item Properties</h1>
+        <h1>order:</h1>
+        <div><h3>This can change the order of items</h3>
+            <div class="flex-container">
+                <div style="order: 3">1</div>
+                <div style="order: 2">2</div>
+                <div style="order: 4">3</div> 
+                <div style="order: 1">4</div>
+            </div>
+        </div>
+
+            <h1>flex-grow:</h1>
+        <div><h3>asdfasgha</h3>
+            <div class="flex-container">
+                <div style="flex-grow: 1">1</div>
+                <div style="flex-grow: 1">2</div>
+                <div style="flex-grow: 8">3</div>
+            </div>
+        </div>
+
+        <h1>flex-shrink:</h1>
+        <div><h3>asdfasgha</h3>
+            <div class="flex-container">
+                <div style="flex-grow: 1">1</div>
+                <div style="flex-grow: 1">2</div>
+                <div style="flex-shrink: 100">3</div> 
+                <div style="flex-grow: 1">4</div>
+                <div style="flex-grow: 1">5</div>
+                <!-- <div>6</div>
+                <div>7</div>
+                <div>8</div> -->
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>
