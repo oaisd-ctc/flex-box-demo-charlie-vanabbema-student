@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="Keywords" content="Flex-containter, Flex-item" />
-    <meta name="Description" content="Html page for Flex container and Flex item properties" />
-    <meta charset="utf-8" />
+    <meta name="Keywords" content="Flex-containter, Flex-item" >
+    <meta name="Description" content="Html page for Flex container and Flex item properties" >
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/flexbox.css" />
+    <link rel="stylesheet" type="text/css" href="styles/flexbox.css" >
     <title>Flex-box Lab</title>
 </head>
-<b>
+<body>
+    <h6>Mr. Martinez sucks at overwatch</h6>
     <section>
             <h1>Flex Container Properties</h1>
             <h1>flex-direction:</h1>
             <div><h3>flex-direction:row</h3>
+                <h3>This container property stacks items from left to right in a row </h3>
                 <div class="flex-container" id="flex-direction-row">
                     <div>1</div>
                     <div>2</div>
@@ -21,6 +23,8 @@
                 </div>
             </div>
             <div><h3>flex-direction:row-reverse</h3>
+                <h3>This container property stacks items from right to left in a row </h3>
+
                 <div class="flex-container" id="flex-direction-row-reverse">
                     <div>1</div>
                     <div>2</div>
@@ -29,6 +33,8 @@
             </div>
         <article>
             <div class="flex"><h3>flex-direction:column</h3>
+                <h3>This container property allows you to stack items from top to bottom in a column instead (These items would be on the left side of the div by default, but I centered them for asthetic purposes)</h3>
+
                 <div class="flex-container" id="flex-direction-column">
                     <div>1</div>
                     <div>2</div>
@@ -36,6 +42,7 @@
                 </div>
             </div>
             <div class="flex"><h3>flex-direction:column-reverse</h3>
+                <h3>This container property allows you to stack items from bottom to top in a column (These items would also be on the left side of the div by default, but I centered them for asthetic purposes)</h3>
                 <div class="flex-container" id="flex-direction-column-reverse">
                     <div>1</div>
                     <div>2</div>
@@ -47,9 +54,9 @@
 <hr> 
     <section>
         <h1>justify-content:</h1>
-            <h1>blahblahblah</h1>
             <div>
                     <h3>justify-content:center</h3>
+                    <h3>This property allows you to align the items to the center of the container</h3>
                 <div class="flex-container" id="flex-justify-center">
                     <div>1</div>
                     <div>2</div>
@@ -59,6 +66,7 @@
 
             <div>
                     <h3>justify-content:start</h3>
+                    <h3>This property is used by default and lets you align the items to the beginning of the container</h3>
                 <div class="flex-container" id="flex-justify-start">
                     <div>1</div>
                     <div>2</div>
@@ -68,6 +76,7 @@
 
             <div>
                     <h3>justify-content:end</h3>
+                    <h3>This property allows you to align the items to the end of the container</h3>
                 <div class="flex-container" id="flex-justify-end">
                     <div>1</div>
                     <div>2</div>
@@ -77,6 +86,7 @@
 
             <div>
                 <h3>justify-content:space-around</h3>
+                <h3>This property lets you display items with space all around them in every direction</h3>
             <div class="flex-container" id="flex-justify-space-around">
                 <div>1</div>
                 <div>2</div>
@@ -86,6 +96,7 @@
 
         <div>
                 <h3>justify-content:space-between</h3>
+                <h3>This property lets you display items with space in between each one</h3>
             <div class="flex-container" id="flex-justify-space-between">
                 <div>1</div>
                 <div>2</div>
@@ -96,9 +107,10 @@
 <hr> 
     <section>
         <h1>flex-wrap:</h1>
-        <h1>blahblahblah</h1>
+        
         <div>
                 <h3>flex-wrap:wrap</h3>
+                <h3>This property makes the items wrap into other space in the div when neccessary</h3>
             <div class="flex-container" id="flex-wrap-wrap">
                     <div>1</div>
                     <div>2</div>
@@ -108,6 +120,7 @@
 
         <div>
                 <h3>flex-wrap:nowrap</h3>
+                <h3>This property makes the items stationary and not wrap</h3>
             <div class="flex-container" id="flex-wrap-nowrap">
                     <div>1</div>
                     <div>2</div>
@@ -117,6 +130,7 @@
 
         <div>
                 <h3>flex-wrap:wrap-reverse</h3>
+                <h3>This property also makes the items wrap into other space in the div when neccessary, except in the opposite order</h3>
             <div class="flex-container" id="flex-wrap-wrap-reverse">
                     <div>1</div>
                     <div>2</div>
@@ -138,7 +152,7 @@
         </div>
 
             <h1>flex-grow:</h1>
-        <div><h3>asdfasgha</h3>
+        <div><h3>This lets certain items grow in size when neccessary</h3>
             <div class="flex-container">
                 <div style="flex-grow: 1">1</div>
                 <div style="flex-grow: 1">2</div>
@@ -147,7 +161,7 @@
         </div>
 
         <h1>flex-shrink:</h1>
-        <div><h3>asdfasgha</h3>
+        <div><h3>This makes certain items shrink before other items when neccessary</h3>
             <div class="flex-container">
                 <div style="flex-grow: 1">1</div>
                 <div style="flex-grow: 1">2</div>
@@ -161,5 +175,6 @@
             </div>
         </div>
     </section>
+    <h6>Mr. Martinez sucks at overwatch</h6>
 </body>
 </html>
